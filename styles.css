@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    position: fixed;
+    background-color: skyblue;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+}
+.logo {
+    font-size: 25px;
+    position: relative;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    line-height: 70px;
+}
+ul {
+ position: relative;
+ float: right;margin-right: 20px;
+}
+ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+.main_img {
+    width: 100%;
+    height: 300px;
+}
+.section1 {
+    padding-top: 70px;
+}
+.img_text {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: midnightblue;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 35px;
+}
+.welcome_img {
+    width:100%;
+    height: 250px;
+}
+.container {
+    padding-top: 70px;
+}
+.teacher {
+    width: 90%;
+    height: 200px;
+}
+.label_text {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+.input_design {
+width: 30%;
+height: 40px;
+border-radius: 25px;
+border: 1 px solid blue;
+}
+.admission {
+   padding-top: 30px; 
+   padding-bottom: 30px;
+}
+.admission_int {
+    padding-top: 10px;
+}
+.input_txt {
+    width: 30%;
+    height: 120px;
+    border-radius: 25px;
+    border: 1 px solid blue;
+}
+#submit {
+    width: 15%;
+    left: 5%;
+    position: relative;
+}
+footer {
+ background-color: black;
+ height: 70px;
+ width: 100%;
+}
+.footer_text {
+    text-align: center;
+    color: white;
+    top: 20%;
+    position: relative;
+}
+/* login page styling*/
+.form_design {
+   padding-top: 200px; 
+}
+.label_design {
+    display: inline-block; 
+    color: skyblue;
+    width: 100px;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ .login_form {
+    background-color: black;
+    width: 400px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+ }
+ .title_design {
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+
+ }
+ .body_design {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+ }
