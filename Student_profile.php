@@ -31,6 +31,13 @@ elseif($_SESSION['usertype']=='admin'){
 
 
     }
+    .div_design{
+        background-color: skyblue;
+        width: 500px;
+        padding-top:70px;
+        padding-bottom:70px;
+
+    }
 </style>
 
 
@@ -41,7 +48,11 @@ include 'student_sidebar.php';
 
 ?>
    <div class="content">
+   <center>
+    <h1> Update profile</h1>
+    <br><br>
     <form>
+    <div class="div_design">
         <div>
             <label>Name</label>
             <input type="text" name="name">
@@ -59,9 +70,11 @@ include 'student_sidebar.php';
             <input type="text" name="password">
         </div>
         <div>
-            <input type="submit" name="Update_profile">
+            <input type="submit" class="btn btn-primary"name="Update_profile">
         </div>
-    </form>
+    </div>
+  </form>
+ </center>
 
    </div> 
 </body>
