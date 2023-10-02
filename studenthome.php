@@ -34,6 +34,9 @@ elseif($_SESSION['usertype']=='admin'){
     </header>
     <aside>
         <ul>
+        <li>
+                <a href="">My Profile</a>
+           </li>
            <li>
                 <a href="">My Courses</a>
            </li>
