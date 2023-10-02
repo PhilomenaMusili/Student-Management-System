@@ -21,6 +21,18 @@ elseif($_SESSION['usertype']=='admin'){
     include 'student_css.php';
 
 ?>
+<style type="text/css">
+    label {
+        display: inline-block;
+        text-align: right;
+        width: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+
+    }
+</style>
+
 
 </head>
 <body>
