@@ -7,7 +7,7 @@
     <aside>
         <ul>
         <li>
-                <a href="">My Profile</a>
+                <a href="student_profile.php">My Profile</a>
            </li>
            <li>
                 <a href="">My Courses</a>
