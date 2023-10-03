@@ -10,6 +10,13 @@ if($_SESSION['message'])
       alert('$message');
     </script>";
 }
+$host ="localhost";
+$username ="root";
+$password="";
+$db ="school_project";
+
+$data = mysqli_connect($host,$username,$password,$db);
+
 
 ?>
 
