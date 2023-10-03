@@ -21,7 +21,8 @@ session_start();
     $db ="school_project";
 
     $data = mysqli_connect($host,$username,$password,$db);
-    
+    $sql ="SELECT * FROM teacher";
+    $result =mysqli_query($data,$sql);
 
 ?>
 <!DOCTYPE html>
@@ -63,11 +64,29 @@ session_start();
                 <th class="table_th">About Teacher</th>
                 <th class="table_th">Image</th>
            </tr>
+           <?php
+           while($info=$result->fetch_assoc())
+           {
+
+           ?>
            <tr>
-            <td class="table_td">ty</td>
-            <td class="table_td">klk</td>
-            <td class="table_td">yy</td>
+            <td class="table_td">
+                <?php echo "{$info['name']}"?>
+            </td>
+            <td class="table_td">
+            <?php echo "{$info['description']}"?>
+            </td>
+            <td class="table_td">
+            <?php echo "{$info['image']}"?>
+            </td>
            </tr>
+
+           <?php
+
+           }
+
+           ?>
+
         </table>
     </center>
         
