@@ -16,6 +16,7 @@ $password="";
 $db ="school_project";
 
 $data = mysqli_connect($host,$username,$password,$db);
+$sql="SELECT * FROM teacher";//can get data from teacher table
 
 
 ?>
