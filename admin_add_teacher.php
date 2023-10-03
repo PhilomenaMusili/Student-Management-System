@@ -34,6 +34,12 @@ session_start();
        VALUES ('$t_name','$t_description','$dst_db')";
 
        $result =mysqli_query($data,$sql);
+
+       if($result)
+       {
+        header('location:admin_add_teacher.php');
+
+       }
     }
 
 ?>
