@@ -67,20 +67,24 @@ $result=mysqli_query($data,$sql);
     </center>
     <div class="container">
        <div class="row">
-           <div class="col-md-4">
-             <img class="teacher" src="school1.jpg"alt="Teachers">
-             <p>Math teacher</p>
-            </div>
-            <div class="col-md-4">
-            <img class="teacher" src="mena.jpg"alt="Teachers">
-            <p>Physics teacher</p>
-           </div>
-           <div class="col-md-4">
-             <img class="teacher" src="library.jpg"alt="Teachers">
-             <p>Biology teacher</p>
-            </div>
+        <?php
             
+            while($info=$result->fetch_assoc())
+            {
+    
+        ?>
+        <div class="col-md-4">
+             <img class="teacher" src="<?php echo "{$info['image']}" ?>"alt="Teachers">
+             <h3> 
+                 <?php echo "{$info['name']}" ?>
+            </h3>
+            <h5> 
+                 <?php echo "{$info['description']}" ?>
+            </h5>
         </div>
+        <?php
+              }
+        ?>
     </div>
     <center>
         <h1>Our Courses<h1>
@@ -88,13 +92,13 @@ $result=mysqli_query($data,$sql);
     <div class="container">
        <div class="row">
            <div class="col-md-4">
-             <img class="teacher" src="teacher1.jpg"alt="Teachers">
-             <h3>Computer Sciencer</h3>
-             
-            </div>
+                <img class="teacher" src="course1.jpg"alt="Teachers">
+                <h3>Computer Science</h3>
+           </div>
+
             <div class="col-md-4">
-            <img class="teacher" src="course1.jpg"alt="Teachers">
-            <h3>Digital Marketing and SEO</h3>
+                <img class="teacher" src="course1.jpg"alt="Teachers">
+                <h3>Digital Marketing and SEO</h3>
            </div>
            <div class="col-md-4">
              <img class="teacher" src="study1.jpg"alt="Teachers">
