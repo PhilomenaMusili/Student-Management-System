@@ -15,6 +15,14 @@ session_start();
 
     }
 
+    $host ="localhost";
+    $username ="root";
+    $password="";
+    $db ="school_project";
+
+    $data = mysqli_connect($host,$username,$password,$db);
+    
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +34,18 @@ session_start();
     include 'admin_css.php';
 
     ?>
+    <style type="text/css">
+        .table_th{
+            padding: 20px;
+            font-size: 20px;
+
+        }
+        .table_td{
+            padding: 20px;
+            background-color: skyblue;
+
+        }
+    </style>
 </head>
 <body>
 <?php
@@ -33,6 +53,9 @@ session_start();
     
     ?>
     <div class="content">
+        <center>
+
+
         <h1>View All Teacher Data</h1>
         <table border="1px">
             <tr>
@@ -41,11 +64,12 @@ session_start();
                 <th class="table_th">Image</th>
            </tr>
            <tr>
-            <td class="table_td"></td>
-            <td class="table_td"></td>
-            <td class="table_td"></td>
+            <td class="table_td">ty</td>
+            <td class="table_td">klk</td>
+            <td class="table_td">yy</td>
            </tr>
         </table>
+    </center>
         
     </div>
 </body>
