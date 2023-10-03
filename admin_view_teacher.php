@@ -67,6 +67,7 @@ session_start();
            <?php
            while($info=$result->fetch_assoc())
            {
+            
 
            ?>
            <tr>
