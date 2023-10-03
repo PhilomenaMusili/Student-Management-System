@@ -77,7 +77,8 @@ session_start();
             <?php echo "{$info['description']}"?>
             </td>
             <td class="table_td">
-            <?php echo "{$info['image']}"?>
+                <img height="100px" width="100px" src="<?php echo "{$info['image']}"?> ">
+            
             </td>
            </tr>
 
