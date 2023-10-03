@@ -28,7 +28,7 @@ session_start();
         $file=$_FILES['image']['name'];//for adding image
         $dst="./image/".$file;
         $dst_db="image/".$file;
-        move_uploaded_file($_FILES['image']['name'], $dst);
+        move_uploaded_file($_FILES['image']['tmp_name'], $dst);//tmp_name makes images be availbale in image folder
 
        $sql ="INSERT INTO teacher(name,description,image) 
        VALUES ('$t_name','$t_description','$dst_db')";
