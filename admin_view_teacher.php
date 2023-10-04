@@ -109,8 +109,11 @@ error_reporting(0);
                 ?>
                
                 </td>
-                <td>
-                    <a href="">Update</a>
+                <td class="table_td">
+                    <?php
+                      echo "
+                      <a href='admin_update_teacher.php?teacher_id={$info['id']}' class='btn btn-primary'>Update</a>"
+                    ?>
                 </td>
            </tr>
 
