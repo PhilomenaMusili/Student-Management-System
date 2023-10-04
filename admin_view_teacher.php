@@ -2,6 +2,7 @@
 <?php
 //prevents one from loging direct using url you must login
 session_start();
+error_reporting(0);
 
     if(!isset($_SESSION['username']))
     {
@@ -23,6 +24,19 @@ session_start();
     $data = mysqli_connect($host,$username,$password,$db);
     $sql ="SELECT * FROM teacher";
     $result =mysqli_query($data,$sql);
+
+    if($_GET['teacher_id'])
+    {
+        $t_id =$_GET['teacher_id'];
+
+        $sql2="DELETE FROM teacher WHERE id=$t_id ";
+        $result2 =mysqli_query($data,$sql2);
+
+        if($result2)
+        {
+            header("location:admin_view_teacher.php");
+        }
+    }
 
 ?>
 <!DOCTYPE html>
@@ -83,8 +97,15 @@ session_start();
             </td>
             
             <td class="table_td">
-                <a  class="btn btn-danger" href="">Delete</a>
-            </td>
+
+              
+                 <?php 
+                echo "<a 
+                onClick=\"javascript:return confirm('Are you sure to delete this');\"
+                class='btn btn-danger' href='admin_view_teacher.php?teacher_id={$info['id']}'>Delete </a>";
+                ?>
+               
+                </td>
            </tr>
 
            <?php
