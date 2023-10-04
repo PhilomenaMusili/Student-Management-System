@@ -9,7 +9,7 @@ error_reporting(0);
     header("location:login.php");
     }
 
-    //it will send smone to login page it he want to go to student page uing ur
+    //it will send someone to login page if he wants to go to student page using url
     elseif($_SESSION['usertype']=='student')   
      {
         header("location:login.php");
@@ -78,6 +78,8 @@ error_reporting(0);
                 <th class="table_th">Teacher Name</th>
                 <th class="table_th">About Teacher</th>
                 <th class="table_th">Image</th>
+                <th class="table_th">Delete</th>
+                <th class="table_th">Update</th>
            </tr>
            <?php
            while($info=$result->fetch_assoc())
@@ -106,6 +108,9 @@ error_reporting(0);
                 class='btn btn-danger' href='admin_view_teacher.php?teacher_id={$info['id']}'>Delete </a>";
                 ?>
                
+                </td>
+                <td>
+                    <a href="">Update</a>
                 </td>
            </tr>
 
