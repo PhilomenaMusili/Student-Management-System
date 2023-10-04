@@ -81,6 +81,10 @@ session_start();
                 <img height="100px" width="100px" src="<?php echo "{$info['image']}"?> ">
             
             </td>
+            
+            <td class="table_td">
+                <a  class="btn btn-danger" href="">Delete</a>
+            </td>
            </tr>
 
            <?php
