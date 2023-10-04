@@ -34,6 +34,7 @@ error_reporting(0);
 
         if($result2)
         {
+           
             header("location:admin_view_teacher.php");
         }
     }
