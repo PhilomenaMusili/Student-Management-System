@@ -35,41 +35,29 @@ error_reporting(0);
 
     } 
     if(isset($_POST['update_teacher']))
-    {
-        $id =$_POST['id'];
-       
-        $t_name =$_POST['name'];
+{
+    $id = $_POST['id'];
+    $t_name = $_POST['name'];
+    $t_description = $_POST['description'];
+    $t_file = $_FILES['image']['name'];
+    $dst = "./image/".$t_file;
+    $dst_db = "./image/".$t_file;
+    move_uploaded_file($_FILES['image']['tmp_name'], $dst);
 
-       $t_description =$_POST['description'];
-
-       $t_file =$_FILES['image']['name'];
-
-       $dst="./image/".$t_file;
-
-       $dst_db="./image/".$t_file;
-
-       move_uploaded_file($_FILES['image']['tmp_name'], $dst);
-
-       if($t_file){
-        
-       $sql2 ="UPDATE teacher SET name=' $t_name', description='$t_description', image='$dst_db' 
-       WHERE id ='$id' ";
-
-       }
-       else {
-        
-       $sql2 ="UPDATE teacher SET name=' $t_name', 
-       description='$t_description',  
-       WHERE id ='$id' ";
-       }
-    
-       $result2=mysqli_query($data,$sql2);
-
-       if($result2){
-        header('location:admin_view_teacher.php');
-       }
-
+    if($t_file){
+        $sql2 = "UPDATE teacher SET name='$t_name', description='$t_description', image='$dst_db' WHERE id='$id'";
     }
+    else {
+        $sql2 = "UPDATE teacher SET name='$t_name', description='$t_description' WHERE id='$id'";
+    }
+
+    $result2 = mysqli_query($data, $sql2);
+
+    if($result2){
+        header('location:admin_view_teacher.php');
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -112,17 +100,19 @@ error_reporting(0);
         <br>
         <form class="form_deg"action="admin_update_teacher.php" method="POST" 
         enctype="multipart/form-data">
+
          <input type="text" name="id" 
-         value="<?php echo "{$info['id']}";?>" hidden>   
+         value="<?php echo "{$info['id']}";?>" hidden> 
+
         <div>
-            <label class=>Teacher Name</label>
+            <label>Teacher Name</label>
              <input type="text"name="name"
                 value="<?php echo "{$info['name']}";?>">
             </div>
             <div>
                 <label>About Teacher</label>
                 <textarea name="description" rows="4">
-                    <?php echo "{$info['description']}";?>
+                    <?php echo "{$info['description']}"; ?>
                 </textarea>
             </div>
             <div>
