@@ -92,7 +92,7 @@ session_start();
                </td>
                <td class="table_td">  
                 <?php 
-                  echo "<a class='btn btn-primary' href='update_student.php?student_id={$info['id']}'>
+                  echo "<a class='btn btn-primary' href='update_course.php?student_id={$info['id']}'>
                   Update 
                   </a>";
                ?>
