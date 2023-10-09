@@ -20,6 +20,7 @@ elseif($_SESSION['usertype']=='admin'){
     $sql ="SELECT * FROM user WHERE username='$name' ";
     $result = mysqli_query($data,$sql);
     $info = mysqli_fetch_assoc($result);
+    
     if(isset($_POST['Update_profile']))
     {
         $s_email=$_POST['email'];
@@ -55,8 +56,6 @@ elseif($_SESSION['usertype']=='admin'){
         width: 100px;
         padding-top: 10px;
         padding-bottom: 10px;
-
-
     }
     .div_design{
         background-color: skyblue;
