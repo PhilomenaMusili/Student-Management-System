@@ -87,8 +87,9 @@ session_start();
                 <?php 
                 echo "<a 
                 onClick=\"javascript:return confirm('Are you sure to delete this');\"
-                class='btn btn-danger' href='delete.php?student_id={$info['id']}'>Delete </a>";
+                class='btn btn-danger' href='delete_course.php?course_id={$info['id']}'>Delete </a>";
                 ?>
+                
                </td>
                <td class="table_td">  
                 <?php 
