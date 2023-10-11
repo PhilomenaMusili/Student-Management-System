@@ -34,7 +34,7 @@ session_start();
    <style type="text/css">
     .table {
         border-collapse: collapse; /* Collapse the borders to prevent double lines */
-        width: 100%;
+        width: 90%;
         background-color: skyblue;
     }
     .table, th, td {
