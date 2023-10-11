@@ -65,7 +65,7 @@
         <h1>Apply for Admission</h1>
         <br><br>
         <table border="1px" class="table">
-        <tr>
+        <tr  style="background-color: grey;"> <!-- First row with grey background -->>
             <th  class="table_th">Name</th>
             <th  class="table_th">Email</th>
             <th  class="table_th">Phone</th>

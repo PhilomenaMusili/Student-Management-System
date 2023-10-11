@@ -71,7 +71,7 @@ session_start();
         ?>
         <br><br>
         <table border="1px" class="table">
-            <tr>
+            <tr  style="background-color: grey;"> <!-- First row with grey background -->>
                 <th class="table_th">Course Name</th>
                 <th class="table_th">Course Code</th>
                 <th class="table_th">Teacher</th>
@@ -102,7 +102,7 @@ session_start();
                 
                </td>
                <td class="table_td">  
-                
+
                 <?php 
                   echo "<a class='btn btn-primary' href='update_course.php?student_id={$info['id']}'>
                   Update 
