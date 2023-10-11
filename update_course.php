@@ -32,7 +32,7 @@ if (isset($_POST['update'])) {
     $result2 = mysqli_query($data, $query);
 
     if ($result2) {
-        header("location: view_student.php");
+        header("location: view_courses.php");
     }
 }
 ?>
