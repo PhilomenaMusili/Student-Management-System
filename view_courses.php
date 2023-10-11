@@ -38,7 +38,7 @@ session_start();
         background-color: skyblue;
     }
     .table, th, td {
-        border: 1px solid black; /* Add a 1px solid black border to table, th, and td elements */
+        border: 1px solid black;
     }
     .table_th {
         padding: 20px;
