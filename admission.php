@@ -36,17 +36,25 @@
     include 'admin_css.php';
     
     ?>
- <style type="text/css">
-        .table_th {
-           padding:20px; 
-           font-size:20px; 
-        }
-        .table_td {
-            padding:20px; 
-           font-size:20px; 
-           background-color: skyblue; 
-        }
-    </style>
+<style type="text/css">
+    .table {
+        border-collapse: collapse; /* Collapse the borders to prevent double lines */
+        width: 90%;
+        background-color: skyblue;
+    }
+    .table, th, td {
+        border: 1px solid black;
+    }
+    .table_th {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .table_td {
+        padding: 20px;
+        font-size: 20px;
+        
+    }
+</style>
 </head>
 <body>
 <?php
@@ -56,12 +64,12 @@
     <div class="content">
         <h1>Apply for Admission</h1>
         <br><br>
-        <table border="1px">
+        <table border="1px" class="table">
         <tr>
-            <th style="padding: 20px; font-size: 15px;" class="table_th">Name</th>
-            <th style="padding: 20px; font-size: 15px;" class="table_th">Email</th>
-            <th style="padding: 20px; font-size: 15px;" class="table_th">Phone</th>
-            <th style="padding: 20px; font-size: 15px;" class="table_th">Message</th>
+            <th  class="table_th">Name</th>
+            <th  class="table_th">Email</th>
+            <th  class="table_th">Phone</th>
+            <th  class="table_th">Message</th>
        </tr>
        <?php
         while($info=$result->fetch_assoc())
