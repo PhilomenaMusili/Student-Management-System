@@ -47,7 +47,7 @@ session_start();
     .table_td {
         padding: 20px;
         font-size: 20px;
-        background-color: skyblue;
+        
     }
 </style>
 
