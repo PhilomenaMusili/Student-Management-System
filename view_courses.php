@@ -60,8 +60,8 @@ session_start();
     <div class="content">
         <center>
 
-       
         <h1> View Courses</h1>
+
         <?php
         if($_SESSION['message'])
         {
@@ -93,6 +93,7 @@ session_start();
                <td class="table_td">  <?php echo "{$info['teacher']}";?></td>
                <td class="table_td">  <?php echo "{$info['description']}";?></td>
                <td class="table_td">  
+
                 <?php 
                 echo "<a 
                 onClick=\"javascript:return confirm('Are you sure to delete this');\"
@@ -101,15 +102,15 @@ session_start();
                 
                </td>
                <td class="table_td">  
+                
                 <?php 
                   echo "<a class='btn btn-primary' href='update_course.php?student_id={$info['id']}'>
                   Update 
                   </a>";
                ?>
                </td>
-
-
             </tr>
+
             <?php 
                }
             ?>
