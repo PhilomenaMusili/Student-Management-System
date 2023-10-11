@@ -31,17 +31,26 @@ session_start();
     include 'admin_css.php';
 
     ?>
-    <style type="text/css">
-        .table_th {
-           padding:20px; 
-           font-size:20px; 
-        }
-        .table_td {
-            padding:20px; 
-           font-size:20px; 
-           background-color: skyblue; 
-        }
-    </style>
+   <style type="text/css">
+    .table {
+        border-collapse: collapse; /* Collapse the borders to prevent double lines */
+        width: 100%;
+        background-color: skyblue;
+    }
+    .table, th, td {
+        border: 1px solid black; /* Add a 1px solid black border to table, th, and td elements */
+    }
+    .table_th {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .table_td {
+        padding: 20px;
+        font-size: 20px;
+        background-color: skyblue;
+    }
+</style>
+
 </head>
 <body>
 <?php
@@ -61,7 +70,7 @@ session_start();
         unset($_SESSION['message']);
         ?>
         <br><br>
-        <table border="1px">
+        <table border="1px" class="table">
             <tr>
                 <th class="table_th">Course Name</th>
                 <th class="table_th">Course Code</th>
