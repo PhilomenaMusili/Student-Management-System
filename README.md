@@ -37,11 +37,13 @@ The Student Management System is a web application designed to manage student in
 
     php -S localhost:8000
     
-    Open your browser and visit [http://localhost:8000/](http://localhost:8000/) to access the Student Management System.
+    Open your browser and visi [http://localhost:8000/](http://localhost:8000/) to access the Student Management System.
 
 ## Usage
 
+To use it follow the following 
 - Navigate to the home page to view information about the school, teachers, courses, and access the admission form.
+
 - Teachers' details are dynamically fetched from the database and displayed on the webpage.
 - The admission form allows prospective students to submit their details for further processing.
 
