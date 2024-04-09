@@ -4,7 +4,7 @@ The Student Management System is a web application designed to manage student in
 
 ## Features
 
-- **User Authentication:** Secure login system for administrators.
+- **User Authentication:Secure login system for administrators.
 - Teacher Information: Display details of teachers, including name, image, and description.
 - Courses: Showcase various courses offered by the institution.
 - Admission Form: Allow prospective students to submit admission inquiries.
