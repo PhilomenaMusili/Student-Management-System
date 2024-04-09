@@ -13,9 +13,10 @@ The Student Management System is a web application designed to manage student in
 
 1. Clone the repository:
 
-    git clone https://github.com/your-username/student-management-system.git
+    git clone
+ https://github.com/your-username/student-management-system.git
   
-2. Set up the database:
+2. Set up the your database:
 
     - Create a MySQL database named `school_project`.
     - Import the provided SQL file (`database.sql`) into your database.
